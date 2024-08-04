@@ -195,5 +195,5 @@ const basicCalculator = (x, y, cal) => {
 }
 console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'));
 console.log('Exercise 9 Result:', basicCalculator(10, 5, 'multiply'));
-console.log('_____________10________________');
+console.log('_____________Done________________');
 

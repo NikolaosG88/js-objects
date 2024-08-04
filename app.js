@@ -42,7 +42,6 @@ const isAdult = (x) => {
 }
 
 console.log('Exercise 2 Result:', isAdult(21));
-console.log('Exercise 2 Result:', isAdult(17));
 console.log('_____________3________________')
 /*
 Exercise 3: isCharAVowel()
@@ -57,6 +56,112 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-const isCharAVowel = () => 
+const isCharAVowel = (x) => {
+  if (x === 'a' || x === 'e' || x === 'i' || x === 'o' || x === 'u') {
+    return 'True';
+  } else {
+    return 'False';
+  }
+}
+console.log('Exercise 3 Result:', isCharAVowel('a'));
+console.log('_____________4________________');
+/*
+Exercise 4: generateEmail()
 
-console.log('Exercise 3 Result:', isCharAVowel("a"));
+Create a function named generateEmail. It should take two strings: 
+a name and a domain. It should return a simple email address.
+
+Example: generateEmail('johnsmith', 'example.com') 
+should return 'johnsmith@example.com'.
+
+Complete the exercise in the space below:
+*/
+const generateEmail = (Name, Domain) => {
+ return `${Name}@${Domain}`
+}
+
+
+console.log('Exercise 4 Result:', generateEmail('Nikthegeek', 'example.com'));
+console.log('_____________5________________');
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+
+const greetUser = (name, time) => {
+    return `Good ${time}, ${name}!`;
+}
+
+console.log('Exercise 5 Result:', greetUser('Nik', 'Morning'));
+console.log('_____________6________________');
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+const maxOfThree = (x, y, z) => {
+  if (x > y && x > z) {
+    return x;
+  } else if (y > x && y > z) {
+    return y;
+  } else {
+    return z;
+  }
+}
+
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+console.log('Exercise 6 Result:', maxOfThree(1, 2, 3));
+console.log('_____________7________________');
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
+Complete the exercise in the space below:
+*/
+
+const calculateTip = (billAmount, tipPercentage) => {
+       return billAmount * tipPercentage/100;
+}
+
+console.log('Exercise 7 Result:', calculateTip(50, 20));
+console.log('_____________8________________');
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+
+const convertTemperature = (temp, unit) {
+  if ()
+}
+
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('_____________9________________');
+

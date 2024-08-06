@@ -58,9 +58,9 @@ Complete the exercise in the space below:
 
 const isCharAVowel = (x) => {
   if (x === 'a' || x === 'e' || x === 'i' || x === 'o' || x === 'u') {
-    return 'True';
+    return true;
   } else {
-    return 'False';
+    return falsefls;
   }
 }
 console.log('Exercise 3 Result:', isCharAVowel('a'));
